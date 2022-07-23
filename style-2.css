@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Roboto:wght@300&display=swap');
+* {
+    font-family: 'Ibarra Real Nova', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+body{
+    background-color: #eaeded;
+}
+/* header */
+header{
+    position: relative;
+    max-width: 100%;
+    height: 10rem;
+    display: block;
+    margin: 0px auto;
+    background-color: #96ee8c;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* logo */
+header a.logo{
+    position: absolute;
+    max-width: 80px;
+    width: 5rem;
+    height: 2rem;
+    text-decoration: none;
+    left: 0;
+    top: 0%;
+    margin-left: 3rem;
+}
+header a.logo img{
+    max-width: 120px;
+    height: 7rem;
+    border-radius: 50%;
+}
+/* header nav-bar */
+header nav.nav-bar{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #222f3e;
+}
+header nav.nav-bar ul.nav-bar li{
+    display: inline-block;
+    list-style: none;
+    padding: 2px 10px;
+}
+header nav.nav-bar ul.nav-bar li:hover{
+    background-color: gray;
+}
+
+header nav.nav-bar ul.nav-bar a{
+    display: block;
+    color: #FFFF;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+header nav.nav-bar ul.nav-bar li a:hover{
+    color: wheat;
+}
+
+/* breadcrumb */
+section.breadcrumb{
+    max-width: 35rem;
+    height: 3rem;
+    display: block;
+    margin: 2rem auto;
+
+}
+section.breadcrumb ul{
+    display: block;
+    max-width: 20rem;
+    margin: 1px auto;
+}
+
+section.breadcrumb ul li{
+    display: inline-block;
+    list-style: none;
+}
+section.breadcrumb ul li a{
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+}
+section.breadcrumb ul li+li:before {
+    color: black;
+    content: "\003e";
+}
+
+
+/* wrapper for book images and price*/
+div.wrapper{
+    position: relative;
+    max-width: 90%;
+    height: 20rem;
+    display: flex;
+    margin: 2rem auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #112A46;
+}
+/* main image of the book */
+div.wrapper section.book-image-box{
+    max-width: 40rem;
+    flex: 50%;
+    margin: 10px 1rem;
+}
+div.wrapper section.book-image-box img{
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem auto;
+    margin-top: 1.5rem;
+}
+
+/* image list */
+div.wrapper section.image-list{
+    max-width: 30rem;
+    flex: 20%;
+    margin: 10px 3rem;
+}
+div.wrapper section.image-list ul{
+    display: block;
+    max-width: 20rem;
+    height: 15rem;
+    margin-top: -10%; 
+}
+
+div.wrapper section.image-list ul li{
+    list-style: none;
+    display: block;
+    height: 7rem;
+    padding: 5px;
+    margin: 0.2rem 0;
+}
+div.wrapper section.image-list ul li img{
+    display: block;
+    max-width: 5rem;
+    height: 5rem;
+    margin: 1px auto;
+}
+
+
+/* book price */
+div.wrapper section.book-price{
+    max-width: 30rem;
+    flex: 30%;
+    margin: 10px 3rem;
+}
+
+div.wrapper section.book-price h3{
+    margin: 2rem auto;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+div.wrapper section.book-price a{
+    display: block;
+    height: 2rem;
+    margin-top: -1rem;
+    margin-left: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #112A46;
+    background-color: #ffd712;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+div.wrapper section.book-price a:hover{
+    background-color: #ffd812d2;
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+
+
+/* book description */
+section.book-description{
+    position: relative;
+    max-width: 50rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+section.book-description h2{
+    margin-bottom: 1rem;
+}
+/* footer */
+footer{
+    position: relative;
+    max-width: 100%;
+    height: 5rem;
+    display: block;
+    margin: 0px auto;
+    background-color: #96ee8c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* footer nav-bar */
+footer nav.nav-bar{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #222f3e;
+}
+
+footer nav.nav-bar ul.nav-bar li{
+    display: inline-block;
+    list-style: none;
+    padding: 2px 10px;
+}
+
+footer nav.nav-bar ul.nav-bar li:hover{
+    background-color: gray;
+}
+
+footer nav.nav-bar ul.nav-bar li a{
+    display: block;
+    color: #FFFF;
+    font-weight: 400;
+    text-decoration: none;
+}
+footer nav.nav-bar ul.nav-bar li a:hover{
+    color: wheat;
+}
+
+@media (max-width: 980px) {
+    /* header */
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+    }
+    /* logo */
+    header a.logo{
+        position: absolute;
+        left: 40%;
+        top: 0;
+        margin-left: 0;
+    }
+    /* header nav-bar */
+    header nav.nav-bar{
+        bottom: 0;
+        right: 0.5rem;
+        width: 30rem;
+    }
+    header nav.nav-bar ul.nav-bar li{
+        display: block;
+        text-align: center;
+        max-width: 100%;
+    }
+    /* for the aside bar  menu option*/
+    /* body{
+        position: relative;
+    }
+    header{
+        position: static;
+    }
+    header nav.nav-bar{
+        position: absolute;
+        bottom: calc(100%/2);
+    }
+    header nav.nav-bar ul.nav-bar li{ 
+        display: block;
+        text-align: center;
+        height: 3rem;
+        max-width: 5rem;
+    } */
+    /* wrapper */
+    div.wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 45rem;
+        margin-bottom: 1rem;
+    }
+    div.wrapper section.book-image-box, div.wrapper section.image-list, div.wrapper section.book-price{
+        display: block;
+        margin: 3px auto;
+        width: 30rem;
+    }
+    /* image list */
+    div.wrapper section.image-list{
+        display: flex;
+        height: 10rem;
+
+    }
+    div.wrapper section.image-list ul{
+        display: block;
+        margin: 3px auto;
+        height: 8rem;
+    }
+    div.wrapper section.image-list ul li{
+        display: inline-block;
+        margin: 2rem 0.5;
+        height: 5rem;
+    }
+    /* book price */
+    div.wrapper section.book-price h3{
+        margin-top: 1rem;
+    }
+    div.wrapper section.book-price a{
+        display: block;
+        margin-top: 1rem;
+        height: 3rem;
+    }
+    div.wrapper section.book-price a span{
+        display: block;
+        margin: 0.5rem auto;
+    }
+
+
+    /* book description */
+    section.book-description{
+        height: 20rem;
+        margin-bottom: 3rem;
+    }
+    section.book-description h2{
+        text-align: center;
+    }
+    section.book-description p{
+        max-width: 20rem;
+        margin: 2px auto;
+    }
+    /* footer */
+    footer{
+        height: 10rem;
+    }
+    /* footer nav-bar */
+    footer nav.nav-bar{
+        bottom: 0;
+        right: 1%;
+        width: 30rem;
+    }
+    footer nav.nav-bar ul.nav-bar li{
+        display: block;
+        text-align: center;
+        max-width: 100%;
+    }
+
+}

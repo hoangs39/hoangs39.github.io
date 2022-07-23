@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Roboto:wght@300&display=swap');
+* {
+    font-family: 'Ibarra Real Nova', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eaeded;
+}
+/* header */
+header{
+    position: relative;
+    max-width: 100%;
+    height: 10rem;
+    display: block;
+    margin: 0px auto;
+    background-color: #96ee8c;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* header logo */
+header a.logo{
+    position: absolute;
+    max-width: 80px;
+    width: 5rem;
+    height: 2rem;
+    text-decoration: none;
+    left: 0;
+    top: 0%;
+    margin-left: 3rem;
+}
+header a.logo img{
+    max-width: 120px;
+    height: 7rem;
+    border-radius: 50%;
+}
+/* header nav-bar */
+header nav.nav-bar{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #222f3e;
+}
+header nav.nav-bar ul.nav-bar li{
+    display: inline-block;
+    list-style: none;
+    padding: 2px 10px;
+}
+header nav.nav-bar ul.nav-bar li:hover{
+    background-color: gray;
+}
+
+header nav.nav-bar ul.nav-bar a{
+    display: block;
+    color: #FFFF;
+    font-weight: 400;
+    text-decoration: none;
+}
+header nav.nav-bar ul.nav-bar li a:hover{
+    color: wheat;
+}
+
+
+/* category */
+section{
+    position: relative;
+    max-width: 100%;
+    display: block;
+    margin: 3rem auto;
+}
+
+div.category-name a{
+    display: block;
+    max-width: 10rem;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FFFF;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+div.category-name a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* wrapper */
+div.wrapper{
+    display: flex;
+    background-color: #FFFF;
+    border-radius: 5px;
+    height: 15rem;
+}
+div.wrapper a{
+    text-decoration: none;
+    display: block;
+    margin-top: 0.5rem;
+    height: 8rem;
+}
+/* book boxes */
+div.wrapper div.book-1{
+    max-width: 30rem;
+    flex: calc(100% / 3);
+    margin: 2rem 3rem;
+}
+div.wrapper div.book-2{
+    max-width: 30rem;
+    flex: calc(100% / 3);
+    margin: 2rem 3rem;
+}
+div.wrapper div.book-3{
+    max-width: 30rem;
+    flex: calc(100% / 3);
+    margin: 2rem 3rem;
+}
+
+/* image box of book */
+div.wrapper a img{
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    margin: 3px auto;
+}
+div.wrapper div.book-info a{
+    display: block;
+    height: 3rem;
+}
+div.wrapper div.book-info a span{
+    display: block;
+    max-width: 6rem;
+    text-align: center;
+    margin: 3px auto;
+    color: #027085;
+}
+div.wrapper div.book-info a span:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+
+
+/* footer */
+footer{
+    position: relative;
+    max-width: 100rem;
+    height: 5rem;
+    display: block;
+    margin: 0px auto;
+    background-color: #96ee8c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* footer nav-bar */
+footer nav.nav-bar{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #222f3e;
+}
+
+footer nav.nav-bar ul.nav-bar li{
+    display: inline-block;
+    list-style: none;
+    padding: 2px 10px;
+}
+footer nav.nav-bar ul.nav-bar li:hover{
+    background-color: gray;
+}
+footer nav.nav-bar ul.nav-bar li a{
+    display: block;
+    color: #FFFF;
+    font-weight: 400;
+    text-decoration: none;
+}
+footer nav.nav-bar ul.nav-bar li a:hover{
+    color: wheat;
+}
+
+@media (max-width: 980px) {
+    /* header */
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+    }
+    /* logo */
+    header a.logo{
+        position: absolute;
+        left: 40%;
+        top: 0;
+        margin-left: 0;
+    }
+    /* header nav-bar */
+    header nav.nav-bar{
+        bottom: 0;
+        right: 0.5rem;
+        width: 30rem;
+    }
+    header nav.nav-bar ul.nav-bar li{
+        display: block;
+        text-align: center;
+        max-width: 100%;
+    }
+    /* section */
+    section{
+        max-width: 30rem;
+    }
+    div.wrapper div.book-1{
+        max-width: 10rem;
+        flex: calc(100% / 3);
+        margin: 10px 0.5rem;
+    }
+    div.wrapper div.book-2{
+        max-width: 10rem;
+        flex: calc(100% / 3);
+        margin: 10px 0.5rem;
+    }
+    div.wrapper div.book-3{
+        max-width: 10rem;
+        flex: calc(100% / 3);
+        margin: 10px 0.5rem;
+    }
+    /* footer */
+    footer{
+        height: 10rem;
+    }
+    /* footer nav-bar */
+    footer nav.nav-bar{
+        bottom: 0;
+        right: 0.5rem;
+        width: 30rem;
+    }
+    footer nav.nav-bar ul.nav-bar li{
+        display: block;
+        text-align: center;
+        /* border: 1px solid black; */
+        max-width: 100%;
+    }
+
+}
